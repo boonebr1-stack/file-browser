@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Browser</title>
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>File Browser</h1>
+
+    <!-- File Table -->
+    <table role="grid">
+      <thead>
+        <tr>
+          <th>File Icon</th>
+          <th>File Name</th>
+          <th>File Type</th>
+          <th>File Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fas fa-file-image"></i></td>
+          <td><a href="hello.jpg">hello.png</a></td>
+          <td>PNG Image</td>
+          <td>12 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-code"></i></td>
+          <td><a href="page.html">page.html</a></td>
+          <td>HTML File</td>
+          <td>1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-code"></i></td>
+          <td><a href="data.json">data.json</a></td>
+          <td>JSON File</td>
+          <td>1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-alt"></i></td>
+          <td><a href="notes.txt">notes.txt</a></td>
+          <td>Text File</td>
+          <td>1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-pdf"></i></td>
+          <td><a href="hello.pdf">hello.pdf</a></td>
+          <td>PDF File</td>
+          <td>20 KB</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Observations -->
+    <h2>Observations</h2>
+    <ul>
+      <li>The PNG image opened directly in the browser instead of downloading.</li>
+      <li>The PDF file opened in the browser’s built-in PDF viewer.</li>
+      <li>The JSON and TXT files displayed as plain text inside the browser.</li>
+    </ul>
+  </main>
+</body>
+</html>
